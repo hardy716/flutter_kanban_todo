@@ -1,0 +1,74 @@
+name: flutter_kanban_todo
+description: "A simple and minimal Kanban-style TODO app built with Flutter."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.8.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Firebase
+  firebase_core:
+  firebase_auth:
+  firebase_crashlytics:
+  firebase_analytics:
+  cloud_firestore:
+
+  # State Management
+  flutter_riverpod:
+  riverpod_annotation:
+
+  # Routing
+  go_router:
+
+  # HTTP & Network
+  dio:
+  retrofit:
+  talker_dio_logger:
+
+  # Serialization & Modeling
+  json_annotation:
+  freezed_annotation:
+  freezed:
+
+  # Assets
+  flutter_svg:
+
+  # Debounce / Throttle
+  easy_debounce:
+  debounce_throttle:
+
+  # Hash
+  crypto:
+
+  # UI DSL
+  flutter_dsl:
+
+  # Logger / File IO
+  logging:
+  path:
+  path_provider:
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # Linting
+  flutter_lints: ^5.0.0
+  riverpod_lint:
+  custom_lint:
+
+  # Code Generation
+  build_runner:
+  retrofit_generator:
+  riverpod_generator:
+  json_serializable:
+  analyzer:
+  analyzer_plugin:
+  custom_lint_builder:
+
+flutter:
+  uses-material-design: true

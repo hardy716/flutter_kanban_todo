@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 
-void main() {
+import 'core/config/app_environment_manager.dart';
+
+void main() async {
+  await AppEnvironmentManager.ensureInitialized();
+
   runApp(const MyApp());
 }
 

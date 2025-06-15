@@ -1,6 +1,9 @@
 enum AppRoute {
   splash('/', 'splash'),
   login('/login', 'login'),
+  subjects('/subjects', 'subjects'),
+  tasks('/tasks', 'tasks'),
+  statistics('/statistics', 'statistics'),
   error('/error', 'error');
 
   final String path;

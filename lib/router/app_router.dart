@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart' show GlobalKey, NavigatorState;
+
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
@@ -19,16 +20,11 @@ GoRouter appRouter(Ref ref) {
     // refreshListenable: ,
     // redirect: ,
     routes: [
-      GoRoute(
-        path: AppRoute.splash.path,
-        name: AppRoute.splash.name,
-        pageBuilder: AppRoute.splash.builder,
-      ),
-      GoRoute(
-        path: AppRoute.login.path,
-        name: AppRoute.login.name,
-        pageBuilder: AppRoute.login.builder,
-      ),
+      GoRoute(path: AppRoute.splash.path, name: AppRoute.splash.name, pageBuilder: AppRoute.splash.builder),
+      GoRoute(path: AppRoute.login.path, name: AppRoute.login.name, pageBuilder: AppRoute.login.builder),
+      GoRoute(path: AppRoute.subjects.path, name: AppRoute.subjects.name, pageBuilder: AppRoute.subjects.builder),
+      GoRoute(path: AppRoute.tasks.path, name: AppRoute.tasks.name, pageBuilder: AppRoute.tasks.builder),
+      GoRoute(path: AppRoute.statistics.path, name: AppRoute.statistics.name, pageBuilder: AppRoute.statistics.builder),
     ],
     errorPageBuilder: AppRoute.error.builder,
   );
